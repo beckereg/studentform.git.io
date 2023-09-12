@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aadfc2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #007bff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f4a5a6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-check-label {
+            margin-left: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admission Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="inputStudentFName">Student First Name</label>
+            <input type="text" class="form-control" id="inputStudentFName" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="inputStudentLName">Student Last Name</label>
+            <input type="text" class="form-control" id="inputStudentLName" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="example122@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="inputphone">Phone</label>
+            <input type="text" class="form-control" id="inputphone" placeholder="+250">
+        </div>
+        <div class="form-group">
+            <label for="inputAcademic">Academic year</label>
+            <input type="text" class="form-control" id="inputAcademic" placeholder="20---20">
+        </div>
+        <div class="form-group">
+            <label for="inputdepartment">Department</label>
+            <select id="inputdepartment" class="form-control">
+                <option selected>Software Eng</option>
+                <option>Network communication</option>
+                <option>Information Management</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="FatherName">Father's Name</label>
+            <input type="text" class="form-control" id="FatherName">
+        </div>
+        <div class="form-group">
+            <label for="MotherName">Mother's Name</label>
+            <input type="text" class="form-control" id="MotherName">
+        </div>
+        <div class="form-group">
+            <label for="DateOfBirth">Date of Birth</label>
+            <input type="date" class="form-control" id="DateOfBirth">
+        </div>
+        <div class="form-group">
+            <label for="Gender">Gender</label><br>
+            <input type="radio" name="Gender" value="Female"> Female
+            <input type="radio" name="Gender" value="Male"> Male
+            <input type="radio" name="Gender" value="Others"> Others
+        </div>
+        <div class="form-group">
+            <label for="inputcompus">Campus</label>
+            <select id="inputcompus" class="form-control">
+                <option selected>Masoro</option>
+                <option>Gishushu</option>
+                <option>Ngoma</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <label class="form-check-label" for="program">Program</label><br>
+                <input class="form-check-input" type="checkbox" id="gridCheck1"> Day
+                <input class="form-check-input" type="checkbox" id="gridCheck2"> Evening
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
